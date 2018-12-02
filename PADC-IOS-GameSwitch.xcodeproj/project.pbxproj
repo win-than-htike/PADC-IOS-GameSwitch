@@ -7,14 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AF21D9221B3B879000C68F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21D9121B3B879000C68F6 /* Utils.swift */; };
+		6AF21D9421B3B8DF000C68F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21D9321B3B8DF000C68F6 /* BaseViewController.swift */; };
+		6AF21D9621B3B916000C68F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21D9521B3B916000C68F6 /* Extensions.swift */; };
+		6AF21D9821B3B93D000C68F6 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21D9721B3B93D000C68F6 /* BorderTextField.swift */; };
+		6AF21D9A21B3B965000C68F6 /* ShadowTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21D9921B3B965000C68F6 /* ShadowTextField.swift */; };
+		6AF21D9C21B3B997000C68F6 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21D9B21B3B997000C68F6 /* CustomTextView.swift */; };
+		6AF21D9E21B3B9D2000C68F6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21D9D21B3B9D2000C68F6 /* CardView.swift */; };
+		6AF21DA021B3B9F8000C68F6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21D9F21B3B9F8000C68F6 /* CustomButton.swift */; };
+		6AF21DA221B3BCD0000C68F6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21DA121B3BCD0000C68F6 /* NetworkManager.swift */; };
+		6AF21DA521B3BE35000C68F6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21DA421B3BE35000C68F6 /* DataModel.swift */; };
+		6AF21DA721B3BEF5000C68F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AF21DA621B3BEF5000C68F6 /* GoogleService-Info.plist */; };
+		6AF21DA921B3BFC1000C68F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21DA821B3BFC1000C68F6 /* LoginViewController.swift */; };
+		6AF21DAB21B3C0E6000C68F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF21DAA21B3C0E6000C68F6 /* HomeViewController.swift */; };
 		99C090D021B3B1B2000F6CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C090CF21B3B1B2000F6CAE /* AppDelegate.swift */; };
 		99C090D221B3B1B2000F6CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C090D121B3B1B2000F6CAE /* ViewController.swift */; };
 		99C090D521B3B1B2000F6CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C090D321B3B1B2000F6CAE /* Main.storyboard */; };
 		99C090D721B3B1B2000F6CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C090D621B3B1B2000F6CAE /* Assets.xcassets */; };
 		99C090DA21B3B1B2000F6CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C090D821B3B1B2000F6CAE /* LaunchScreen.storyboard */; };
+		A81FFB8D5E30E222B23F6E4D /* Pods_PADC_IOS_GameSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15CD5673D63B6147E0064A9 /* Pods_PADC_IOS_GameSwitch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		459E04E15EAA0BCA15128ADA /* Pods-PADC-IOS-GameSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-GameSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-GameSwitch/Pods-PADC-IOS-GameSwitch.release.xcconfig"; sourceTree = "<group>"; };
+		6AF21D9121B3B879000C68F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6AF21D9321B3B8DF000C68F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6AF21D9521B3B916000C68F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6AF21D9721B3B93D000C68F6 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		6AF21D9921B3B965000C68F6 /* ShadowTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowTextField.swift; sourceTree = "<group>"; };
+		6AF21D9B21B3B997000C68F6 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		6AF21D9D21B3B9D2000C68F6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		6AF21D9F21B3B9F8000C68F6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		6AF21DA121B3BCD0000C68F6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6AF21DA421B3BE35000C68F6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		6AF21DA621B3BEF5000C68F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6AF21DA821B3BFC1000C68F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6AF21DAA21B3C0E6000C68F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		990D19F7C8C74B6FC0B1D4A3 /* Pods-PADC-IOS-GameSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-GameSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-GameSwitch/Pods-PADC-IOS-GameSwitch.debug.xcconfig"; sourceTree = "<group>"; };
 		99C090CC21B3B1B2000F6CAE /* PADC-IOS-GameSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-IOS-GameSwitch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C090CF21B3B1B2000F6CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C090D121B3B1B2000F6CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +51,7 @@
 		99C090D621B3B1B2000F6CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99C090D921B3B1B2000F6CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99C090DB21B3B1B2000F6CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15CD5673D63B6147E0064A9 /* Pods_PADC_IOS_GameSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_GameSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +59,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81FFB8D5E30E222B23F6E4D /* Pods_PADC_IOS_GameSwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AF21D8B21B3B7BA000C68F6 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				6AF21D9321B3B8DF000C68F6 /* BaseViewController.swift */,
+				6AF21DA821B3BFC1000C68F6 /* LoginViewController.swift */,
+				6AF21DAA21B3C0E6000C68F6 /* HomeViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		6AF21D8C21B3B7F0000C68F6 /* vos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = vos;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6AF21D8D21B3B813000C68F6 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				6AF21D9521B3B916000C68F6 /* Extensions.swift */,
+				6AF21D9721B3B93D000C68F6 /* BorderTextField.swift */,
+				6AF21D9921B3B965000C68F6 /* ShadowTextField.swift */,
+				6AF21D9B21B3B997000C68F6 /* CustomTextView.swift */,
+				6AF21D9D21B3B9D2000C68F6 /* CardView.swift */,
+				6AF21D9F21B3B9F8000C68F6 /* CustomButton.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		6AF21D8E21B3B820000C68F6 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				99C090D321B3B1B2000F6CAE /* Main.storyboard */,
+				99C090D821B3B1B2000F6CAE /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		6AF21D8F21B3B843000C68F6 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				6AF21DA121B3BCD0000C68F6 /* NetworkManager.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		6AF21D9021B3B865000C68F6 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				6AF21D9121B3B879000C68F6 /* Utils.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		6AF21DA321B3BE1E000C68F6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6AF21DA421B3BE35000C68F6 /* DataModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		91A4ABAAB68E205D90C34674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F15CD5673D63B6147E0064A9 /* Pods_PADC_IOS_GameSwitch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99C090C321B3B1B2000F6CAE = {
 			isa = PBXGroup;
 			children = (
 				99C090CE21B3B1B2000F6CAE /* PADC-IOS-GameSwitch */,
 				99C090CD21B3B1B2000F6CAE /* Products */,
+				C3A94EFFEADA4D286D164976 /* Pods */,
+				91A4ABAAB68E205D90C34674 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +159,29 @@
 		99C090CE21B3B1B2000F6CAE /* PADC-IOS-GameSwitch */ = {
 			isa = PBXGroup;
 			children = (
+				6AF21DA621B3BEF5000C68F6 /* GoogleService-Info.plist */,
+				6AF21DA321B3BE1E000C68F6 /* Data */,
+				6AF21D9021B3B865000C68F6 /* utility */,
+				6AF21D8F21B3B843000C68F6 /* network */,
+				6AF21D8E21B3B820000C68F6 /* storyboards */,
+				6AF21D8D21B3B813000C68F6 /* components */,
+				6AF21D8C21B3B7F0000C68F6 /* vos */,
+				6AF21D8B21B3B7BA000C68F6 /* viewcontrollers */,
 				99C090CF21B3B1B2000F6CAE /* AppDelegate.swift */,
 				99C090D121B3B1B2000F6CAE /* ViewController.swift */,
-				99C090D321B3B1B2000F6CAE /* Main.storyboard */,
 				99C090D621B3B1B2000F6CAE /* Assets.xcassets */,
-				99C090D821B3B1B2000F6CAE /* LaunchScreen.storyboard */,
 				99C090DB21B3B1B2000F6CAE /* Info.plist */,
 			);
 			path = "PADC-IOS-GameSwitch";
+			sourceTree = "<group>";
+		};
+		C3A94EFFEADA4D286D164976 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				990D19F7C8C74B6FC0B1D4A3 /* Pods-PADC-IOS-GameSwitch.debug.xcconfig */,
+				459E04E15EAA0BCA15128ADA /* Pods-PADC-IOS-GameSwitch.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99C090DE21B3B1B2000F6CAE /* Build configuration list for PBXNativeTarget "PADC-IOS-GameSwitch" */;
 			buildPhases = (
+				232CE65C1897A5C439D90BA4 /* [CP] Check Pods Manifest.lock */,
 				99C090C821B3B1B2000F6CAE /* Sources */,
 				99C090C921B3B1B2000F6CAE /* Frameworks */,
 				99C090CA21B3B1B2000F6CAE /* Resources */,
+				8F5CD3DB7DF8489670218B3D /* [CP] Embed Pods Frameworks */,
+				8CB6AA1C0FA0098363CC7A11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF21DA721B3BEF5000C68F6 /* GoogleService-Info.plist in Resources */,
 				99C090DA21B3B1B2000F6CAE /* LaunchScreen.storyboard in Resources */,
 				99C090D721B3B1B2000F6CAE /* Assets.xcassets in Resources */,
 				99C090D521B3B1B2000F6CAE /* Main.storyboard in Resources */,
@@ -130,13 +254,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		232CE65C1897A5C439D90BA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PADC-IOS-GameSwitch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CB6AA1C0FA0098363CC7A11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-GameSwitch/Pods-PADC-IOS-GameSwitch-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-GameSwitch/Pods-PADC-IOS-GameSwitch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F5CD3DB7DF8489670218B3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-GameSwitch/Pods-PADC-IOS-GameSwitch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-GameSwitch/Pods-PADC-IOS-GameSwitch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99C090C821B3B1B2000F6CAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF21D9621B3B916000C68F6 /* Extensions.swift in Sources */,
+				6AF21DA521B3BE35000C68F6 /* DataModel.swift in Sources */,
+				6AF21D9821B3B93D000C68F6 /* BorderTextField.swift in Sources */,
+				6AF21D9A21B3B965000C68F6 /* ShadowTextField.swift in Sources */,
 				99C090D221B3B1B2000F6CAE /* ViewController.swift in Sources */,
+				6AF21DAB21B3C0E6000C68F6 /* HomeViewController.swift in Sources */,
+				6AF21D9221B3B879000C68F6 /* Utils.swift in Sources */,
+				6AF21DA021B3B9F8000C68F6 /* CustomButton.swift in Sources */,
 				99C090D021B3B1B2000F6CAE /* AppDelegate.swift in Sources */,
+				6AF21D9421B3B8DF000C68F6 /* BaseViewController.swift in Sources */,
+				6AF21D9E21B3B9D2000C68F6 /* CardView.swift in Sources */,
+				6AF21DA221B3BCD0000C68F6 /* NetworkManager.swift in Sources */,
+				6AF21DA921B3BFC1000C68F6 /* LoginViewController.swift in Sources */,
+				6AF21D9C21B3B997000C68F6 /* CustomTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +507,7 @@
 		};
 		99C090DF21B3B1B2000F6CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 990D19F7C8C74B6FC0B1D4A3 /* Pods-PADC-IOS-GameSwitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +525,7 @@
 		};
 		99C090E021B3B1B2000F6CAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459E04E15EAA0BCA15128ADA /* Pods-PADC-IOS-GameSwitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
