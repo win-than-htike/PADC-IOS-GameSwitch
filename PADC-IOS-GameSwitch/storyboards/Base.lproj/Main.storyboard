@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pzU-Jg-nfY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="buj-bH-SR1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -166,10 +166,78 @@
             </objects>
             <point key="canvasLocation" x="2652" y="120.98950524737631"/>
         </scene>
+        <!--Xbox-->
+        <scene sceneID="VY9-E0-zq6">
+            <objects>
+                <viewController id="ClF-wp-lHz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gcE-xi-jNt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="78t-o2-KpX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Xbox" largeTitleDisplayMode="always" id="EBv-m9-THz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5m-Zq-LL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6418.3999999999996" y="449.32533733133437"/>
+        </scene>
+        <!--Nitendo-->
+        <scene sceneID="Muy-ZW-607">
+            <objects>
+                <viewController id="hcF-7Z-xdU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xXw-NY-Oe5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7Hs-L1-Ldg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nitendo" largeTitleDisplayMode="always" id="20h-Pn-5Es"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjH-76-bVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4520.8000000000002" y="1072.7136431784108"/>
+        </scene>
+        <!--PS4-->
+        <scene sceneID="w7K-mJ-4Qq">
+            <objects>
+                <viewController id="WQY-Bn-FN2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgN-mq-nIG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Vsw-qe-nAU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PS4" largeTitleDisplayMode="always" id="3t0-hn-jVd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Thp-p2-466" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5479.1999999999998" y="-219.04047976011995"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="G9a-LJ-IMJ">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeViewController" id="buj-bH-SR1" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Se-XC-UQt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zRV-a1-ens" kind="relationship" relationship="viewControllers" id="i9c-Wl-tma"/>
+                        <segue destination="qch-db-Stv" kind="relationship" relationship="viewControllers" id="UEf-sm-53u"/>
+                        <segue destination="UWT-yS-YMI" kind="relationship" relationship="viewControllers" id="Sbv-z0-e0V"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8I-3A-XVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3582" y="116"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="aW7-jl-AQV">
             <objects>
-                <navigationController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="cAG-rQ-U1B" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cAG-rQ-U1B" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ryz-jQ-ilL">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -184,8 +252,68 @@
             </objects>
             <point key="canvasLocation" x="1712.8" y="120.98950524737631"/>
         </scene>
+        <!--PS4-->
+        <scene sceneID="kay-NI-LgO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zRV-a1-ens" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="PS4" image="ps4" id="qqG-uo-xT8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xfe-KV-TDk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WQY-Bn-FN2" kind="relationship" relationship="rootViewController" id="az9-pP-Cot"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBc-sH-esa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4540" y="-219.04047976011995"/>
+        </scene>
+        <!--Xbox-->
+        <scene sceneID="AX0-vs-kva">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qch-db-Stv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Xbox" image="xbox" id="fzU-vf-yfV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Bu-Dy-yV5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ClF-wp-lHz" kind="relationship" relationship="rootViewController" id="xxT-dk-2bf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pt0-Y6-bhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5479.1999999999998" y="449.32533733133437"/>
+        </scene>
+        <!--Nitendo-->
+        <scene sceneID="pUi-6L-wgB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UWT-yS-YMI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Nitendo" image="nitendo" id="91Z-Lb-8mP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="97j-E3-5EC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hcF-7Z-xdU" kind="relationship" relationship="rootViewController" id="T5y-9R-5K9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOn-Oc-J0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3581.5999999999999" y="1072.7136431784108"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="nitendo" width="32" height="32"/>
+        <image name="ps4" width="32" height="32"/>
         <image name="user" width="100" height="100"/>
+        <image name="xbox" width="32" height="32"/>
     </resources>
 </document>
