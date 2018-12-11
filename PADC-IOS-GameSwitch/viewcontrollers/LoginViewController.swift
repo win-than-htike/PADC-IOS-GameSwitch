@@ -13,17 +13,28 @@ import GoogleSignIn
 import FBSDKLoginKit
 
 class LoginViewController:BaseViewController,GIDSignInDelegate,GIDSignInUIDelegate{
-   
+    @IBOutlet weak var tvEmail: UITextField!
+    @IBOutlet weak var tvPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
     }
+    override func viewDidAppear(_ animated: Bool) {
+        guard let user = Auth.auth().currentUser else { return }
+        
+        if user.isEmailVerified{
+            let navigationVC = self.storyboard!.instantiateViewController(withIdentifier: "HomeViewController") as! UINavigationController
+            let vc = navigationVC.viewControllers[0] as! HomeViewController
+            self.present(navigationVC, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func onClickLogin(_ sender: Any) {
         
-        Auth.auth().signIn(withEmail: "username", password: "password") { (authResult, error) in
+        Auth.auth().signIn(withEmail: tvEmail.text ?? "", password: tvPassword.text ?? "") { (authResult, error) in
             
             if let error = error {
                 self.showAlertDialog(inputMessage: error.localizedDescription)
@@ -36,9 +47,9 @@ class LoginViewController:BaseViewController,GIDSignInDelegate,GIDSignInUIDelega
                 self.showAlertDialog(inputMessage: "Please verify your email.")
                 
             } else {
-//                let navigationVC = self.storyboard!.instantiateViewController(withIdentifier: "HomeViewController") as! UINavigationController
-//                let vc = navigationVC.viewControllers[0] as! HomeViewController
-//                self.present(navigationVC, animated: true, completion: nil)
+                let navigationVC = self.storyboard!.instantiateViewController(withIdentifier: "HomeViewController") as! UINavigationController
+                let vc = navigationVC.viewControllers[0] as! HomeViewController
+                self.present(navigationVC, animated: true, completion: nil)
             }
             
         }
@@ -56,7 +67,7 @@ class LoginViewController:BaseViewController,GIDSignInDelegate,GIDSignInUIDelega
             let emailField = alert.textFields![0]
             let passwordField = alert.textFields![1]
             
-            Auth.auth().createUser(withEmail: "email", password: "password", completion: { (authResult, error) in
+            Auth.auth().createUser(withEmail: emailField.text ?? "", password: passwordField.text ?? "", completion: { (authResult, error) in
                 
                 if let error = error {
                     self.showAlertDialog(inputMessage: error.localizedDescription)
