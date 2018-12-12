@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FeaturedCollectionViewCell" customModule="PADC_IOS_GameSwitch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="297" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxv-tS-Od1">
+                        <rect key="frame" x="8" y="0.0" width="281" height="160"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy" translatesAutoresizingMaskIntoConstraints="NO" id="V8Q-KG-3n9">
+                                <rect key="frame" x="0.0" y="0.0" width="281" height="160"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V8Q-KG-3n9" secondAttribute="trailing" id="MpC-hB-Kr9"/>
+                            <constraint firstItem="V8Q-KG-3n9" firstAttribute="top" secondItem="mxv-tS-Od1" secondAttribute="top" id="dKK-CG-PHE"/>
+                            <constraint firstItem="V8Q-KG-3n9" firstAttribute="leading" secondItem="mxv-tS-Od1" secondAttribute="leading" id="pQZ-Df-gKr"/>
+                            <constraint firstAttribute="bottom" secondItem="V8Q-KG-3n9" secondAttribute="bottom" id="uqq-oE-9jA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mxv-tS-Od1" secondAttribute="bottom" id="8Xa-Ux-fLQ"/>
+                <constraint firstItem="mxv-tS-Od1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Suf-I7-YlE"/>
+                <constraint firstAttribute="trailing" secondItem="mxv-tS-Od1" secondAttribute="trailing" constant="8" id="XH6-Pw-1jl"/>
+                <constraint firstItem="mxv-tS-Od1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cp9-Ur-e1x"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="297" height="160"/>
+            <point key="canvasLocation" x="261.60000000000002" y="98.050974512743636"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dummy" width="880" height="660"/>
+    </resources>
+</document>

@@ -169,7 +169,7 @@
         <!--Xbox-->
         <scene sceneID="VY9-E0-zq6">
             <objects>
-                <viewController id="ClF-wp-lHz" sceneMemberID="viewController">
+                <viewController id="ClF-wp-lHz" customClass="XboxViewController" customModule="PADC_IOS_GameSwitch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gcE-xi-jNt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
         <!--Nitendo-->
         <scene sceneID="Muy-ZW-607">
             <objects>
-                <viewController id="hcF-7Z-xdU" sceneMemberID="viewController">
+                <viewController id="hcF-7Z-xdU" customClass="NitendoViewController" customModule="PADC_IOS_GameSwitch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xXw-NY-Oe5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,14 +202,59 @@
         <!--PS4-->
         <scene sceneID="w7K-mJ-4Qq">
             <objects>
-                <viewController id="WQY-Bn-FN2" sceneMemberID="viewController">
+                <viewController id="WQY-Bn-FN2" customClass="PlayStationViewController" customModule="PADC_IOS_GameSwitch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgN-mq-nIG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQu-CZ-DIN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1m-YR-HHU">
+                                        <rect key="frame" x="16" y="16" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="0.13243792808219179" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H43-tG-jel">
+                                        <rect key="frame" x="8" y="68" width="359" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="5zz-4j-cSX"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fIp-3M-bRr">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="H43-tG-jel" secondAttribute="trailing" constant="8" id="7ma-AM-Ihe"/>
+                                    <constraint firstItem="p1m-YR-HHU" firstAttribute="centerX" secondItem="RQu-CZ-DIN" secondAttribute="centerX" id="IQ1-aj-3Kd"/>
+                                    <constraint firstAttribute="trailing" secondItem="p1m-YR-HHU" secondAttribute="trailing" constant="16" id="Jal-IS-DtH"/>
+                                    <constraint firstItem="p1m-YR-HHU" firstAttribute="leading" secondItem="RQu-CZ-DIN" secondAttribute="leading" constant="16" id="NcG-Bb-jqg"/>
+                                    <constraint firstItem="H43-tG-jel" firstAttribute="leading" secondItem="RQu-CZ-DIN" secondAttribute="leading" constant="8" id="Xgf-rx-KQh"/>
+                                    <constraint firstItem="p1m-YR-HHU" firstAttribute="top" secondItem="RQu-CZ-DIN" secondAttribute="top" constant="16" id="glw-rc-dOw"/>
+                                    <constraint firstItem="H43-tG-jel" firstAttribute="top" secondItem="p1m-YR-HHU" secondAttribute="bottom" constant="16" id="xGz-w2-fkd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vsw-qe-nAU" firstAttribute="trailing" secondItem="RQu-CZ-DIN" secondAttribute="trailing" id="5ZS-3I-qCZ"/>
+                            <constraint firstItem="RQu-CZ-DIN" firstAttribute="leading" secondItem="Vsw-qe-nAU" secondAttribute="leading" id="CVk-04-k3Z"/>
+                            <constraint firstItem="RQu-CZ-DIN" firstAttribute="top" secondItem="Vsw-qe-nAU" secondAttribute="top" id="ny8-Qp-fou"/>
+                            <constraint firstItem="Vsw-qe-nAU" firstAttribute="bottom" secondItem="RQu-CZ-DIN" secondAttribute="bottom" id="rib-li-86u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vsw-qe-nAU"/>
                     </view>
                     <navigationItem key="navigationItem" title="PS4" largeTitleDisplayMode="always" id="3t0-hn-jVd"/>
+                    <connections>
+                        <outlet property="featuredCollectionView" destination="H43-tG-jel" id="Ep2-5c-B5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thp-p2-466" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,7 +267,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Se-XC-UQt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="zRV-a1-ens" kind="relationship" relationship="viewControllers" id="i9c-Wl-tma"/>
@@ -255,12 +300,16 @@
         <!--PS4-->
         <scene sceneID="kay-NI-LgO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zRV-a1-ens" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PlayStationViewController" automaticallyAdjustsScrollViewInsets="NO" id="zRV-a1-ens" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="PS4" image="ps4" id="qqG-uo-xT8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xfe-KV-TDk">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -274,12 +323,13 @@
         <!--Xbox-->
         <scene sceneID="AX0-vs-kva">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qch-db-Stv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="XboxViewController" automaticallyAdjustsScrollViewInsets="NO" id="qch-db-Stv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Xbox" image="xbox" id="fzU-vf-yfV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Bu-Dy-yV5">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -293,7 +343,7 @@
         <!--Nitendo-->
         <scene sceneID="pUi-6L-wgB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UWT-yS-YMI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NitendoViewController" automaticallyAdjustsScrollViewInsets="NO" id="UWT-yS-YMI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Nitendo" image="nitendo" id="91Z-Lb-8mP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="97j-E3-5EC">
