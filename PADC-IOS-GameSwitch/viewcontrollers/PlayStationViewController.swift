@@ -28,6 +28,12 @@ class PlayStationViewController: BaseViewController {
 
 extension PlayStationViewController : UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let nav = self.storyboard?.instantiateViewController(withIdentifier: "GameDetailsViewController") as! UINavigationController
+        
+        
+        self.present( nav , animated: true , completion: nil)
+    }
 }
 
 extension PlayStationViewController : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
@@ -42,7 +48,8 @@ extension PlayStationViewController : UICollectionViewDataSource , UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width , height: 200)
+        let width = self.view.frame.width / 2 - 16
+        return CGSize(width: width , height: 270)
     }
     
 }

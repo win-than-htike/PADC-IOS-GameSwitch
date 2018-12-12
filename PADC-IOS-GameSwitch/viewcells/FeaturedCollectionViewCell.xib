@@ -12,41 +12,52 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FeaturedCollectionViewCell" customModule="PADC_IOS_GameSwitch" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="297" height="160"/>
+            <rect key="frame" x="0.0" y="0.0" width="297" height="446"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="297" height="160"/>
+                <rect key="frame" x="0.0" y="0.0" width="297" height="446"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxv-tS-Od1">
-                        <rect key="frame" x="8" y="0.0" width="281" height="160"/>
+                        <rect key="frame" x="0.0" y="0.0" width="297" height="446"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy" translatesAutoresizingMaskIntoConstraints="NO" id="V8Q-KG-3n9">
-                                <rect key="frame" x="0.0" y="0.0" width="281" height="160"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game" translatesAutoresizingMaskIntoConstraints="NO" id="c19-y0-X1k">
+                                <rect key="frame" x="0.0" y="0.0" width="297" height="446"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="V8Q-KG-3n9" secondAttribute="trailing" id="MpC-hB-Kr9"/>
-                            <constraint firstItem="V8Q-KG-3n9" firstAttribute="top" secondItem="mxv-tS-Od1" secondAttribute="top" id="dKK-CG-PHE"/>
-                            <constraint firstItem="V8Q-KG-3n9" firstAttribute="leading" secondItem="mxv-tS-Od1" secondAttribute="leading" id="pQZ-Df-gKr"/>
-                            <constraint firstAttribute="bottom" secondItem="V8Q-KG-3n9" secondAttribute="bottom" id="uqq-oE-9jA"/>
+                            <constraint firstItem="c19-y0-X1k" firstAttribute="top" secondItem="mxv-tS-Od1" secondAttribute="top" id="EVL-ee-cEJ"/>
+                            <constraint firstItem="c19-y0-X1k" firstAttribute="leading" secondItem="mxv-tS-Od1" secondAttribute="leading" id="T4d-Dn-c1j"/>
+                            <constraint firstAttribute="trailing" secondItem="c19-y0-X1k" secondAttribute="trailing" id="jy1-kG-vun"/>
+                            <constraint firstAttribute="bottom" secondItem="c19-y0-X1k" secondAttribute="bottom" id="rd8-dn-cIf"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="mxv-tS-Od1" secondAttribute="bottom" id="8Xa-Ux-fLQ"/>
-                <constraint firstItem="mxv-tS-Od1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Suf-I7-YlE"/>
-                <constraint firstAttribute="trailing" secondItem="mxv-tS-Od1" secondAttribute="trailing" constant="8" id="XH6-Pw-1jl"/>
+                <constraint firstItem="mxv-tS-Od1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Suf-I7-YlE"/>
+                <constraint firstAttribute="trailing" secondItem="mxv-tS-Od1" secondAttribute="trailing" id="XH6-Pw-1jl"/>
                 <constraint firstItem="mxv-tS-Od1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cp9-Ur-e1x"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="297" height="160"/>
-            <point key="canvasLocation" x="261.60000000000002" y="98.050974512743636"/>
+            <size key="customSize" width="297" height="446"/>
+            <point key="canvasLocation" x="261.60000000000002" y="225.78710644677662"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="dummy" width="880" height="660"/>
+        <image name="game" width="620" height="918"/>
     </resources>
 </document>
