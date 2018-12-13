@@ -54,6 +54,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="297" height="446"/>
+            <connections>
+                <outlet property="ivGame" destination="c19-y0-X1k" id="ZE4-2A-Gob"/>
+            </connections>
             <point key="canvasLocation" x="261.60000000000002" y="225.78710644677662"/>
         </collectionViewCell>
     </objects>

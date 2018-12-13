@@ -28,6 +28,8 @@
 		A81FFB8D5E30E222B23F6E4D /* Pods_PADC_IOS_GameSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15CD5673D63B6147E0064A9 /* Pods_PADC_IOS_GameSwitch.framework */; };
 		AA32DBCF21C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32DBCD21C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.swift */; };
 		AA32DBD021C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA32DBCE21C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.xib */; };
+		AA36E15321C2455B000D71D4 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36E15121C2455B000D71D4 /* HeaderTableViewCell.swift */; };
+		AA36E15421C2455B000D71D4 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA36E15221C2455B000D71D4 /* HeaderTableViewCell.xib */; };
 		AA59E4B021C0B17700A513AC /* PlayStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59E4AF21C0B17700A513AC /* PlayStationViewController.swift */; };
 		AA59E4B221C0B1B200A513AC /* XboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59E4B121C0B1B200A513AC /* XboxViewController.swift */; };
 		AA59E4B421C0B23C00A513AC /* NitendoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59E4B321C0B23C00A513AC /* NitendoViewController.swift */; };
@@ -59,6 +61,8 @@
 		99C090DB21B3B1B2000F6CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA32DBCD21C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA32DBCE21C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedCollectionViewCell.xib; sourceTree = "<group>"; };
+		AA36E15121C2455B000D71D4 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AA36E15221C2455B000D71D4 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		AA59E4AF21C0B17700A513AC /* PlayStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStationViewController.swift; sourceTree = "<group>"; };
 		AA59E4B121C0B1B200A513AC /* XboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XboxViewController.swift; sourceTree = "<group>"; };
 		AA59E4B321C0B23C00A513AC /* NitendoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitendoViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 			children = (
 				AA32DBCD21C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.swift */,
 				AA32DBCE21C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.xib */,
+				AA36E15121C2455B000D71D4 /* HeaderTableViewCell.swift */,
+				AA36E15221C2455B000D71D4 /* HeaderTableViewCell.xib */,
 			);
 			path = viewcells;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				6AF21DA721B3BEF5000C68F6 /* GoogleService-Info.plist in Resources */,
 				99C090DA21B3B1B2000F6CAE /* LaunchScreen.storyboard in Resources */,
 				99C090D721B3B1B2000F6CAE /* Assets.xcassets in Resources */,
+				AA36E15421C2455B000D71D4 /* HeaderTableViewCell.xib in Resources */,
 				99C090D521B3B1B2000F6CAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +400,7 @@
 				AA59E4B421C0B23C00A513AC /* NitendoViewController.swift in Sources */,
 				6AF21D9E21B3B9D2000C68F6 /* CardView.swift in Sources */,
 				AA32DBCF21C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.swift in Sources */,
+				AA36E15321C2455B000D71D4 /* HeaderTableViewCell.swift in Sources */,
 				6AF21DA221B3BCD0000C68F6 /* NetworkManager.swift in Sources */,
 				6AF21DA921B3BFC1000C68F6 /* LoginViewController.swift in Sources */,
 				6AF21D9C21B3B997000C68F6 /* CustomTextView.swift in Sources */,

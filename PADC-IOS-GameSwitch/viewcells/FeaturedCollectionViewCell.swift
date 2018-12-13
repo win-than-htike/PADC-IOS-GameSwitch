@@ -10,9 +10,12 @@ import UIKit
 
 class FeaturedCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var ivGame: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.ivGame.layer.masksToBounds = true
+        self.ivGame.layer.cornerRadius = 8
     }
 
 }
