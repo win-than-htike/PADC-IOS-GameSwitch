@@ -1,22 +1,18 @@
 //
-//  HeaderTableViewCell.swift
+//  UserTableViewCell.swift
 //  PADC-IOS-GameSwitch
 //
-//  Created by DoeMyanmar on 12/13/18.
+//  Created by Crisis Core on 12/14/18.
 //  Copyright © 2018 padcmyanmar. All rights reserved.
 //
 
 import UIKit
 
-class HeaderTableViewCell: UITableViewCell {
+class UserTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var ivHeader: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        ivHeader.layer.masksToBounds = true
-        ivHeader.layer.cornerRadius = 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

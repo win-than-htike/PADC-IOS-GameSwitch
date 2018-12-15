@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxv-tS-Od1">
                         <rect key="frame" x="0.0" y="0.0" width="297" height="446"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game" translatesAutoresizingMaskIntoConstraints="NO" id="c19-y0-X1k">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game" translatesAutoresizingMaskIntoConstraints="NO" id="c19-y0-X1k">
                                 <rect key="frame" x="0.0" y="0.0" width="297" height="446"/>
                             </imageView>
                         </subviews>
@@ -61,6 +61,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="game" width="620" height="918"/>
+        <image name="game" width="320" height="474"/>
     </resources>
 </document>

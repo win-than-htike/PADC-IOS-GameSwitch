@@ -211,7 +211,19 @@
                     <view key="view" contentMode="scaleToFill" id="Z66-Ts-4Hg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CNK-qy-iEs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CNK-qy-iEs" firstAttribute="leading" secondItem="bjO-2H-5hc" secondAttribute="leading" id="TDf-f0-1Bl"/>
+                            <constraint firstItem="CNK-qy-iEs" firstAttribute="trailing" secondItem="bjO-2H-5hc" secondAttribute="trailing" id="ZlK-89-XTe"/>
+                            <constraint firstItem="CNK-qy-iEs" firstAttribute="top" secondItem="bjO-2H-5hc" secondAttribute="top" id="gbu-Qk-9w4"/>
+                            <constraint firstItem="bjO-2H-5hc" firstAttribute="bottom" secondItem="CNK-qy-iEs" secondAttribute="bottom" id="skg-ru-mSp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bjO-2H-5hc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Game Details" id="sOz-Dj-QhX">
@@ -221,6 +233,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="gameTableView" destination="CNK-qy-iEs" id="zLE-Ee-2Rt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fxg-wg-CrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

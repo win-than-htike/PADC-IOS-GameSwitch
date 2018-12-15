@@ -21,16 +21,35 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCa-Nh-IVr">
                         <rect key="frame" x="0.0" y="0.0" width="421" height="269.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game" translatesAutoresizingMaskIntoConstraints="NO" id="GPY-1M-sf0">
-                                <rect key="frame" x="0.0" y="0.0" width="421" height="269.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="god" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-iw-1Js">
+                                <rect key="frame" x="16" y="16" width="389" height="237.5"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-l9-gl5">
+                                <rect key="frame" x="24" y="164.5" width="373" height="81"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God Of War" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88G-TC-vW5">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 135" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-r5-VjC">
+                                        <rect key="frame" x="0.0" y="44.5" width="373" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="GPY-1M-sf0" secondAttribute="trailing" id="9PA-OT-cqu"/>
-                            <constraint firstAttribute="bottom" secondItem="GPY-1M-sf0" secondAttribute="bottom" id="N6M-R7-Pzj"/>
-                            <constraint firstItem="GPY-1M-sf0" firstAttribute="leading" secondItem="wCa-Nh-IVr" secondAttribute="leading" id="XvD-aT-Iuf"/>
-                            <constraint firstItem="GPY-1M-sf0" firstAttribute="top" secondItem="wCa-Nh-IVr" secondAttribute="top" id="dQs-QK-ngQ"/>
+                            <constraint firstAttribute="trailing" secondItem="jlK-l9-gl5" secondAttribute="trailing" constant="24" id="FzG-nf-Wak"/>
+                            <constraint firstAttribute="bottom" secondItem="Fhe-iw-1Js" secondAttribute="bottom" constant="16" id="RyF-H6-BMM"/>
+                            <constraint firstItem="Fhe-iw-1Js" firstAttribute="leading" secondItem="wCa-Nh-IVr" secondAttribute="leading" constant="16" id="YGG-lS-nex"/>
+                            <constraint firstItem="jlK-l9-gl5" firstAttribute="leading" secondItem="wCa-Nh-IVr" secondAttribute="leading" constant="24" id="at5-MB-opV"/>
+                            <constraint firstAttribute="bottom" secondItem="jlK-l9-gl5" secondAttribute="bottom" constant="24" id="psf-ck-nbI"/>
+                            <constraint firstAttribute="trailing" secondItem="Fhe-iw-1Js" secondAttribute="trailing" constant="16" id="sv5-e2-9qX"/>
+                            <constraint firstItem="Fhe-iw-1Js" firstAttribute="top" secondItem="wCa-Nh-IVr" secondAttribute="top" constant="16" id="xZf-l2-MDQ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -42,10 +61,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivHeader" destination="Fhe-iw-1Js" id="KCc-Qq-fK1"/>
+            </connections>
             <point key="canvasLocation" x="-10.4" y="146.62668665667167"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="game" width="620" height="918"/>
+        <image name="god" width="1200" height="630"/>
     </resources>
 </document>
