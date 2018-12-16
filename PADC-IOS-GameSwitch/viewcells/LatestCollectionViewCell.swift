@@ -12,6 +12,8 @@ class LatestCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var latestCollectionView: UICollectionView!
     
+    var latestGames : [GameVO] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -26,9 +28,13 @@ class LatestCollectionViewCell: UICollectionViewCell {
 extension LatestCollectionViewCell : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let nav  = self.window?.rootViewController!.storyboard?.instantiateViewController(withIdentifier: "GameDetailsViewController")
+        let nav  = self.window?.rootViewController!.storyboard?.instantiateViewController(withIdentifier: "GameDetailsViewController") as! UINavigationController
         
-        self.window?.rootViewController!.present( nav! , animated: true , completion: nil )
+        let vc  = nav.viewControllers[0] as! GameDetailsViewController
+        
+        vc.game = latestGames[indexPath.row]
+        
+        self.window?.rootViewController!.present( nav , animated: true , completion: nil )
         
     }
 }
@@ -36,11 +42,17 @@ extension LatestCollectionViewCell : UICollectionViewDelegate {
 extension LatestCollectionViewCell : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return latestGames.count
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCollectionViewCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCollectionViewCell", for: indexPath) as! FeaturedCollectionViewCell
+        
+        let game = latestGames[indexPath.row]
+        
+        cell.ivGame.sd_setImage(with: URL(string: game.images[0].image_url) , placeholderImage: UIImage(named: "game"))
+        
         return cell
     }
     

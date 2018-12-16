@@ -44,4 +44,11 @@ class DataModel {
             failure()
         }
     }
+    func getUser( userId : String , success : @escaping (UserVO) -> Void , failure : @escaping () -> Void)  {
+        NetworkManager.shared.getUser(userId: userId, success: {(userVO) in
+            success(userVO)
+        }, failure: {
+            
+        })
+    }
 }

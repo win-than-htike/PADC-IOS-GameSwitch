@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pzU-Jg-nfY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,7 +16,17 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="goh-4D-qUx">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="goh-4D-qUx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3AV-La-o7i"/>
+                            <constraint firstItem="goh-4D-qUx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Z3-zV-cR4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -211,21 +221,29 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y44-5s-QhK">
-                                        <rect key="frame" x="16" y="472" width="343" height="48"/>
-                                        <color key="backgroundColor" red="0.20000000000000001" green="0.36078431370000003" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y44-5s-QhK" customClass="CustomButton" customModule="PADC_IOS_GameSwitch" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="500" width="343" height="48"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="FYv-ld-Yry"/>
                                         </constraints>
                                         <state key="normal" title="Let's Go">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onClickNextButton:" destination="bu5-TG-m9t" eventType="touchUpInside" id="vIf-uJ-ld0"/>
                                         </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="J3o-dN-s5T">
-                                        <rect key="frame" x="16" y="428" width="343" height="29"/>
+                                        <rect key="frame" x="16" y="428" width="343" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="XSU-YI-I5v"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="Male"/>
                                             <segment title="Female"/>
@@ -239,7 +257,7 @@
                                     <constraint firstAttribute="trailing" secondItem="PnX-gq-k7G" secondAttribute="trailing" constant="16" id="F2k-Ka-ETn"/>
                                     <constraint firstAttribute="trailing" secondItem="xgD-NA-nQM" secondAttribute="trailing" constant="16" id="FZu-Ss-My2"/>
                                     <constraint firstItem="eSQ-NQ-KKk" firstAttribute="top" secondItem="6gt-I5-VaQ" secondAttribute="top" constant="64" id="KGW-54-v3k"/>
-                                    <constraint firstItem="Y44-5s-QhK" firstAttribute="top" secondItem="J3o-dN-s5T" secondAttribute="bottom" constant="16" id="Keq-k7-xnW"/>
+                                    <constraint firstItem="Y44-5s-QhK" firstAttribute="top" secondItem="J3o-dN-s5T" secondAttribute="bottom" constant="24" id="Keq-k7-xnW"/>
                                     <constraint firstAttribute="trailing" secondItem="J3o-dN-s5T" secondAttribute="trailing" constant="16" id="Kj6-PM-5nk"/>
                                     <constraint firstItem="Tzd-wv-ej1" firstAttribute="leading" secondItem="6gt-I5-VaQ" secondAttribute="leading" constant="16" id="LUc-h4-Glx"/>
                                     <constraint firstItem="Tzd-wv-ej1" firstAttribute="centerX" secondItem="6gt-I5-VaQ" secondAttribute="centerX" id="MlU-xf-cU8"/>
@@ -306,7 +324,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="78t-o2-KpX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Xbox" largeTitleDisplayMode="always" id="EBv-m9-THz"/>
+                    <navigationItem key="navigationItem" title="Xbox" largeTitleDisplayMode="always" id="EBv-m9-THz">
+                        <barButtonItem key="rightBarButtonItem" image="menu_profile" id="fiJ-2Y-97O">
+                            <connections>
+                                <action selector="onClickProfile:" destination="ClF-wp-lHz" id="ZIm-vX-LjR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="xboxCollectionView" destination="qYt-fB-loI" id="pbS-ki-atJ"/>
                     </connections>
@@ -338,7 +362,7 @@
                         <viewLayoutGuide key="safeArea" id="bjO-2H-5hc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rent List" id="sOz-Dj-QhX">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ecp-c6-J17">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="Ecp-c6-J17">
                             <connections>
                                 <action selector="back:" destination="wWp-Ui-1Wy" id="KIW-jL-N4d"/>
                             </connections>
@@ -445,7 +469,7 @@
                         <viewLayoutGuide key="safeArea" id="UhY-A5-zdZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="wWS-Dv-FmJ">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="FzF-Za-e1i">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="FzF-Za-e1i">
                             <connections>
                                 <action selector="back:" destination="Bhz-rj-Xmr" id="9uY-Ia-a69"/>
                             </connections>
@@ -453,6 +477,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ivProfile" destination="EVE-G2-a44" id="SwI-jn-ODk"/>
+                        <outlet property="lblEmail" destination="37J-zS-MC3" id="oci-k7-ckg"/>
+                        <outlet property="lblGender" destination="XF0-xo-YTr" id="x49-o6-hvm"/>
+                        <outlet property="lblName" destination="POh-XK-5em" id="1Vq-en-spl"/>
+                        <outlet property="lblPhone" destination="MyO-j3-QER" id="wmK-Zg-gq9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CC9-n3-HKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -488,7 +516,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Hs-L1-Ldg"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nitendo" largeTitleDisplayMode="always" id="20h-Pn-5Es"/>
+                    <navigationItem key="navigationItem" title="Nitendo" largeTitleDisplayMode="always" id="20h-Pn-5Es">
+                        <barButtonItem key="rightBarButtonItem" image="menu_profile" id="Baa-uJ-FVk">
+                            <connections>
+                                <action selector="clickProfile:" destination="hcF-7Z-xdU" id="5sE-X2-DOr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nitendoCollectionView" destination="WPg-NQ-bgl" id="qV0-Fl-Qh0"/>
@@ -527,7 +561,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vsw-qe-nAU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="PS4" largeTitleDisplayMode="always" id="3t0-hn-jVd"/>
+                    <navigationItem key="navigationItem" title="PS4" largeTitleDisplayMode="always" id="3t0-hn-jVd">
+                        <barButtonItem key="rightBarButtonItem" image="menu_profile" id="MCa-lO-UVA">
+                            <connections>
+                                <action selector="onClickProfile:" destination="WQY-Bn-FN2" id="qde-qa-lWs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="featuredCollectionView" destination="HzR-gr-HGW" id="hYk-z4-bj1"/>
                     </connections>
@@ -539,7 +579,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="G9a-LJ-IMJ">
             <objects>
-                <tabBarController id="buj-bH-SR1" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeViewController" id="buj-bH-SR1" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Se-XC-UQt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -558,7 +598,7 @@
         <!--Navigation Controller-->
         <scene sceneID="aW7-jl-AQV">
             <objects>
-                <navigationController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="cAG-rQ-U1B" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cAG-rQ-U1B" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ryz-jQ-ilL">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -673,6 +713,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="25" height="25"/>
+        <image name="menu_profile" width="25" height="25"/>
         <image name="nitendo" width="32" height="32"/>
         <image name="profile" width="512" height="512"/>
         <image name="ps4" width="32" height="32"/>

@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import Cosmos
 
 class HeaderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var viewForeground: UIView!
     
     @IBOutlet weak var ivHeader: UIImageView!
+    
+    @IBOutlet weak var viewDev: UIView!
+    
+    @IBOutlet weak var lblGameName: UILabel!
+    
+    @IBOutlet weak var cvRating: CosmosView!
+    
+    @IBOutlet weak var lblDeveloper: UILabel!
+    
+    @IBOutlet weak var lblPrice: UILabel!
+    
+    @IBOutlet weak var lblDate: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +35,9 @@ class HeaderTableViewCell: UITableViewCell {
         
         viewForeground.layer.masksToBounds = true
         viewForeground.layer.cornerRadius = 8
+        
+        viewDev.layer.masksToBounds = true
+        viewDev.layer.cornerRadius = 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

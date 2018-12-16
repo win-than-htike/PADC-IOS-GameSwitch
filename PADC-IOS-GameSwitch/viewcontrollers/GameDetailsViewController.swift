@@ -12,6 +12,8 @@ class GameDetailsViewController: UIViewController {
 
     @IBOutlet weak var gameTableView: UITableView!
     
+    var game : GameVO? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +28,6 @@ class GameDetailsViewController: UIViewController {
         Utils.cellRegister(nibName: "HeaderTableViewCell", tableView: gameTableView)
     
     }
-    
 
 
     @IBAction func back(_ sender: Any) {
@@ -36,12 +37,12 @@ class GameDetailsViewController: UIViewController {
 
 extension GameDetailsViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: false)
         
-        if indexPath.section == 0 {
-            let nav = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! UINavigationController
-            self.present( nav , animated: true , completion: nil)
-        }
+//        if indexPath.section == 0 {
+//            let nav = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! UINavigationController
+//            self.present( nav , animated: true , completion: nil)
+//        }
         
     }
 }
@@ -65,7 +66,7 @@ extension GameDetailsViewController : UITableViewDataSource {
         if section == 0 {
             return 1
         }else {
-             return 10
+            return game?.from_switch_posts.count ?? 0
         }
        
     }
@@ -73,12 +74,27 @@ extension GameDetailsViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath) as! HeaderTableViewCell
+            
+            cell.ivHeader.sd_setImage(with: URL(string: self.game!.images[0].image_url) , placeholderImage: UIImage(named: "game"))
+            
+            cell.lblGameName.text = self.game!.name
+            cell.lblDeveloper.text  = self.game!.developer
+            cell.lblPrice.text = "$" + String(self.game!.price)
+            cell.lblDate.text = self.game!.released_date
+            cell.cvRating.rating = self.game!.rating
             
             return cell
         }else {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as! UserTableViewCell
+            
+            let post = game?.from_switch_posts[indexPath.row]
+            
+            cell.ivGame.sd_setImage(with: URL(string: (post?.user.image)! ) , placeholderImage: UIImage(named: "profile"))
+            cell.lblTitle.text = "I want to swith my " + (post?.fromGameName)! + " with " + (post?.toGameName)!
+            cell.lblUserName.text = "Upload by " + (post?.user.name)!
+            cell.lblRemark.text = post?.remark
             
             return cell
         }

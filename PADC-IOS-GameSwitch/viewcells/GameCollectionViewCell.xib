@@ -113,7 +113,12 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="385" height="201"/>
             <connections>
+                <outlet property="cvRating" destination="IeU-jb-otq" id="lis-ve-ip2"/>
                 <outlet property="ivGame" destination="2Ae-kk-OhP" id="NV2-K2-a8r"/>
+                <outlet property="tvDate" destination="Lf7-Is-3nB" id="ZoP-pJ-lak"/>
+                <outlet property="tvDeveloper" destination="EUo-Bi-qUV" id="1O1-Vx-jn8"/>
+                <outlet property="tvGameName" destination="i9z-Wk-jtB" id="jPD-CO-CY1"/>
+                <outlet property="tvReview" destination="1fm-tL-jkH" id="T7l-wf-ozm"/>
             </connections>
             <point key="canvasLocation" x="405.60000000000002" y="207.34632683658174"/>
         </collectionViewCell>

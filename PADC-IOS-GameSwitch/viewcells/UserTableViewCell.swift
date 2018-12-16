@@ -12,6 +12,12 @@ class UserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var ivGame: UIImageView!
     
+    @IBOutlet weak var lblTitle: UILabel!
+    
+    @IBOutlet weak var lblUserName: UILabel!
+    
+    @IBOutlet weak var lblRemark: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
        
