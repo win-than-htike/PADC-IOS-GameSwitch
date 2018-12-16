@@ -204,7 +204,7 @@
             </objects>
             <point key="canvasLocation" x="6418.3999999999996" y="449.32533733133437"/>
         </scene>
-        <!--Game Details-->
+        <!--Rent List-->
         <scene sceneID="epk-YF-5qI">
             <objects>
                 <viewController id="wWp-Ui-1Wy" customClass="GameDetailsViewController" customModule="PADC_IOS_GameSwitch" customModuleProvider="target" sceneMemberID="viewController">
@@ -226,7 +226,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bjO-2H-5hc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Game Details" id="sOz-Dj-QhX">
+                    <navigationItem key="navigationItem" title="Rent List" id="sOz-Dj-QhX">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Ecp-c6-J17">
                             <connections>
                                 <action selector="back:" destination="wWp-Ui-1Wy" id="KIW-jL-N4d"/>
@@ -240,6 +240,113 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fxg-wg-CrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9407.2000000000007" y="-17.541229385307346"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="SpU-Qb-wol">
+            <objects>
+                <viewController id="Bhz-rj-Xmr" customClass="ProfileViewController" customModule="PADC_IOS_GameSwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ltg-eJ-OY6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W03-Rf-FoK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-G2-a44">
+                                        <rect key="frame" x="87.5" y="24" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="AyA-ve-jaq"/>
+                                            <constraint firstAttribute="width" constant="200" id="tOy-P8-d6I"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eminem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POh-XK-5em">
+                                        <rect key="frame" x="24" y="248" width="327" height="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eminem@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37J-zS-MC3">
+                                        <rect key="frame" x="24" y="331" width="327" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09799752657" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyO-j3-QER">
+                                        <rect key="frame" x="24" y="376" width="327" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF0-xo-YTr">
+                                        <rect key="frame" x="24" y="421" width="327" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nda-sc-irb" customClass="CustomButton" customModule="PADC_IOS_GameSwitch" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="490" width="327" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KdG-rD-J12"/>
+                                        </constraints>
+                                        <state key="normal" title="Upload Post">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="POh-XK-5em" secondAttribute="trailing" constant="24" id="9r3-f8-w1i"/>
+                                    <constraint firstItem="37J-zS-MC3" firstAttribute="centerX" secondItem="W03-Rf-FoK" secondAttribute="centerX" id="BAu-na-H3h"/>
+                                    <constraint firstAttribute="trailing" secondItem="nda-sc-irb" secondAttribute="trailing" constant="24" id="EsN-Ac-bCS"/>
+                                    <constraint firstItem="nda-sc-irb" firstAttribute="top" secondItem="XF0-xo-YTr" secondAttribute="bottom" constant="48" id="Jlu-m8-xyd"/>
+                                    <constraint firstItem="37J-zS-MC3" firstAttribute="leading" secondItem="W03-Rf-FoK" secondAttribute="leading" constant="24" id="LgO-OP-DbE"/>
+                                    <constraint firstAttribute="trailing" secondItem="MyO-j3-QER" secondAttribute="trailing" constant="24" id="Ll0-Aq-q0K"/>
+                                    <constraint firstItem="MyO-j3-QER" firstAttribute="top" secondItem="37J-zS-MC3" secondAttribute="bottom" constant="24" id="UDN-ZL-lK9"/>
+                                    <constraint firstItem="MyO-j3-QER" firstAttribute="centerX" secondItem="W03-Rf-FoK" secondAttribute="centerX" id="X11-Ab-0RY"/>
+                                    <constraint firstItem="POh-XK-5em" firstAttribute="top" secondItem="EVE-G2-a44" secondAttribute="bottom" constant="24" id="XdO-8m-4xs"/>
+                                    <constraint firstAttribute="trailing" secondItem="37J-zS-MC3" secondAttribute="trailing" constant="24" id="a3z-Be-S7W"/>
+                                    <constraint firstItem="37J-zS-MC3" firstAttribute="top" secondItem="POh-XK-5em" secondAttribute="bottom" constant="48" id="baZ-mQ-MnU"/>
+                                    <constraint firstItem="EVE-G2-a44" firstAttribute="top" secondItem="W03-Rf-FoK" secondAttribute="top" constant="24" id="cZ0-Pr-fZg"/>
+                                    <constraint firstItem="POh-XK-5em" firstAttribute="centerX" secondItem="W03-Rf-FoK" secondAttribute="centerX" id="eO1-HY-WBu"/>
+                                    <constraint firstItem="EVE-G2-a44" firstAttribute="centerX" secondItem="W03-Rf-FoK" secondAttribute="centerX" id="fI9-Kq-beg"/>
+                                    <constraint firstAttribute="bottom" secondItem="nda-sc-irb" secondAttribute="bottom" constant="48" id="fOZ-sH-Ufe"/>
+                                    <constraint firstItem="nda-sc-irb" firstAttribute="leading" secondItem="W03-Rf-FoK" secondAttribute="leading" constant="24" id="go5-t6-YdU"/>
+                                    <constraint firstItem="MyO-j3-QER" firstAttribute="leading" secondItem="W03-Rf-FoK" secondAttribute="leading" constant="24" id="jJA-zQ-Opr"/>
+                                    <constraint firstItem="XF0-xo-YTr" firstAttribute="leading" secondItem="W03-Rf-FoK" secondAttribute="leading" constant="24" id="myG-eM-R7O"/>
+                                    <constraint firstItem="XF0-xo-YTr" firstAttribute="top" secondItem="MyO-j3-QER" secondAttribute="bottom" constant="24" id="qgw-Ct-UrN"/>
+                                    <constraint firstAttribute="trailing" secondItem="XF0-xo-YTr" secondAttribute="trailing" constant="24" id="sKm-RS-cf2"/>
+                                    <constraint firstItem="POh-XK-5em" firstAttribute="leading" secondItem="W03-Rf-FoK" secondAttribute="leading" constant="24" id="yQ5-Tc-zzd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W03-Rf-FoK" firstAttribute="trailing" secondItem="UhY-A5-zdZ" secondAttribute="trailing" id="Alz-d9-9m4"/>
+                            <constraint firstItem="W03-Rf-FoK" firstAttribute="top" secondItem="UhY-A5-zdZ" secondAttribute="top" id="Rz9-e4-JcQ"/>
+                            <constraint firstItem="W03-Rf-FoK" firstAttribute="bottom" secondItem="UhY-A5-zdZ" secondAttribute="bottom" id="WQZ-fp-S0U"/>
+                            <constraint firstItem="W03-Rf-FoK" firstAttribute="leading" secondItem="UhY-A5-zdZ" secondAttribute="leading" id="Y4m-aG-wic"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UhY-A5-zdZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="wWS-Dv-FmJ">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="FzF-Za-e1i">
+                            <connections>
+                                <action selector="back:" destination="Bhz-rj-Xmr" id="9uY-Ia-a69"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ivProfile" destination="EVE-G2-a44" id="SwI-jn-ODk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CC9-n3-HKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9407" y="907"/>
         </scene>
         <!--Nitendo-->
         <scene sceneID="Muy-ZW-607">
@@ -435,9 +542,28 @@
             </objects>
             <point key="canvasLocation" x="8468" y="-17.541229385307346"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xwr-1P-70h">
+            <objects>
+                <navigationController storyboardIdentifier="ProfileViewController" automaticallyAdjustsScrollViewInsets="NO" id="ueW-fk-jS3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vm3-Ca-FxK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bhz-rj-Xmr" kind="relationship" relationship="rootViewController" id="7BK-Mk-30L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBk-fW-jsP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8468" y="907"/>
+        </scene>
     </scenes>
     <resources>
         <image name="nitendo" width="32" height="32"/>
+        <image name="profile" width="512" height="512"/>
         <image name="ps4" width="32" height="32"/>
         <image name="user" width="100" height="100"/>
         <image name="xbox" width="32" height="32"/>

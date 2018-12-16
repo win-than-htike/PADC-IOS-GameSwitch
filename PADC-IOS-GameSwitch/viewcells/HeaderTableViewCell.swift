@@ -10,6 +10,8 @@ import UIKit
 
 class HeaderTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var viewForeground: UIView!
+    
     @IBOutlet weak var ivHeader: UIImageView!
     
     override func awakeFromNib() {
@@ -17,6 +19,9 @@ class HeaderTableViewCell: UITableViewCell {
         // Initialization code
         ivHeader.layer.masksToBounds = true
         ivHeader.layer.cornerRadius = 8
+        
+        viewForeground.layer.masksToBounds = true
+        viewForeground.layer.cornerRadius = 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -14,6 +14,7 @@ pod 'Firebase/Auth'
 pod 'GoogleSignIn'
 pod 'FBSDKLoginKit'
 pod 'SDWebImage/WebP'
+pod 'Cosmos', '~> 17.0'
 
 
 end

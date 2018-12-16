@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GameCollectionViewCell" customModule="PADC_IOS_GameSwitch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDt-65-cCm">
+                        <rect key="frame" x="0.0" y="0.0" width="385" height="201"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game" translatesAutoresizingMaskIntoConstraints="NO" id="2Ae-kk-OhP">
+                                <rect key="frame" x="16" y="8" width="140" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="7VS-j4-7r8"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cab-Xe-dJ7">
+                                <rect key="frame" x="164" y="8" width="205" height="177"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God Of War" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9z-Wk-jtB">
+                                        <rect key="frame" x="16" y="0.0" width="173" height="28"/>
+                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeU-jb-otq" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="16" y="36" width="173" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                <real key="value" value="4.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUo-Bi-qUV">
+                                        <rect key="frame" x="16" y="64" width="173" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansChakma-Regular" family="Noto Sans Chakma" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Dec 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf7-Is-3nB">
+                                        <rect key="frame" x="16" y="98.5" width="173" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fm-tL-jkH">
+                                        <rect key="frame" x="16" y="123" width="173" height="60.5"/>
+                                        <string key="text">God of War[a] is an action-adventure video game developed by Santa Monica Studio and published by Sony Interactive Entertainment (SIE).</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1fm-tL-jkH" firstAttribute="top" secondItem="Lf7-Is-3nB" secondAttribute="bottom" constant="8" id="1G4-AE-e4I"/>
+                                    <constraint firstItem="IeU-jb-otq" firstAttribute="top" secondItem="i9z-Wk-jtB" secondAttribute="bottom" constant="8" id="1l9-04-ipX"/>
+                                    <constraint firstAttribute="trailing" secondItem="i9z-Wk-jtB" secondAttribute="trailing" constant="16" id="2Nb-Gl-k48"/>
+                                    <constraint firstAttribute="trailing" secondItem="IeU-jb-otq" secondAttribute="trailing" constant="16" id="3Ku-G2-kfX"/>
+                                    <constraint firstItem="IeU-jb-otq" firstAttribute="leading" secondItem="cab-Xe-dJ7" secondAttribute="leading" constant="16" id="Et5-Sh-MAK"/>
+                                    <constraint firstAttribute="trailing" secondItem="1fm-tL-jkH" secondAttribute="trailing" constant="16" id="HuT-gA-rh5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lf7-Is-3nB" secondAttribute="trailing" constant="16" id="LOn-7j-IAg"/>
+                                    <constraint firstItem="EUo-Bi-qUV" firstAttribute="leading" secondItem="cab-Xe-dJ7" secondAttribute="leading" constant="16" id="LtA-kq-Dzk"/>
+                                    <constraint firstItem="EUo-Bi-qUV" firstAttribute="top" secondItem="IeU-jb-otq" secondAttribute="bottom" constant="8" id="M1q-aB-p0D"/>
+                                    <constraint firstAttribute="trailing" secondItem="EUo-Bi-qUV" secondAttribute="trailing" constant="16" id="ZGz-4b-q3p"/>
+                                    <constraint firstItem="Lf7-Is-3nB" firstAttribute="top" secondItem="EUo-Bi-qUV" secondAttribute="bottom" constant="8" id="co2-LR-QSi"/>
+                                    <constraint firstItem="1fm-tL-jkH" firstAttribute="leading" secondItem="cab-Xe-dJ7" secondAttribute="leading" constant="16" id="gc6-yj-a95"/>
+                                    <constraint firstItem="i9z-Wk-jtB" firstAttribute="leading" secondItem="cab-Xe-dJ7" secondAttribute="leading" constant="16" id="hsc-6A-Bxb"/>
+                                    <constraint firstItem="Lf7-Is-3nB" firstAttribute="leading" secondItem="cab-Xe-dJ7" secondAttribute="leading" constant="16" id="mvV-h5-bmK"/>
+                                    <constraint firstItem="i9z-Wk-jtB" firstAttribute="top" secondItem="cab-Xe-dJ7" secondAttribute="top" id="yKg-ju-1c3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Ae-kk-OhP" firstAttribute="top" secondItem="nDt-65-cCm" secondAttribute="top" constant="8" id="3pV-nK-gMg"/>
+                            <constraint firstItem="2Ae-kk-OhP" firstAttribute="leading" secondItem="nDt-65-cCm" secondAttribute="leading" constant="16" id="CL6-7b-rLG"/>
+                            <constraint firstItem="cab-Xe-dJ7" firstAttribute="leading" secondItem="2Ae-kk-OhP" secondAttribute="trailing" constant="8" id="P6U-hw-9ul"/>
+                            <constraint firstItem="cab-Xe-dJ7" firstAttribute="top" secondItem="nDt-65-cCm" secondAttribute="top" constant="8" id="R9q-wX-bVu"/>
+                            <constraint firstAttribute="bottom" secondItem="cab-Xe-dJ7" secondAttribute="bottom" constant="16" id="Xth-el-dVV"/>
+                            <constraint firstAttribute="bottom" secondItem="2Ae-kk-OhP" secondAttribute="bottom" constant="8" id="bYe-iE-M2P"/>
+                            <constraint firstAttribute="trailing" secondItem="cab-Xe-dJ7" secondAttribute="trailing" constant="16" id="gXt-Hw-qUI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nDt-65-cCm" secondAttribute="trailing" id="2RM-fT-t7k"/>
+                <constraint firstItem="nDt-65-cCm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2j9-Jb-lmt"/>
+                <constraint firstItem="nDt-65-cCm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="63J-6w-DgB"/>
+                <constraint firstAttribute="bottom" secondItem="nDt-65-cCm" secondAttribute="bottom" id="Lsg-Lj-L0d"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="385" height="201"/>
+            <connections>
+                <outlet property="ivGame" destination="2Ae-kk-OhP" id="NV2-K2-a8r"/>
+            </connections>
+            <point key="canvasLocation" x="405.60000000000002" y="207.34632683658174"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="game" width="320" height="474"/>
+    </resources>
+</document>

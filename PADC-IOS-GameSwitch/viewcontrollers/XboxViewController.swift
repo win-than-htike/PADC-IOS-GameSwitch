@@ -18,7 +18,9 @@ class XboxViewController: BaseViewController {
         self.xboxCollectionView.delegate = self
         self.xboxCollectionView.dataSource = self
         
-        Utils.cellRegister(nibName: "FeaturedCollectionViewCell", collectionView: xboxCollectionView)
+        Utils.cellRegister(nibName: "PopularCollectionViewCell", collectionView: xboxCollectionView)
+        Utils.cellRegister(nibName: "LatestCollectionViewCell", collectionView: xboxCollectionView)
+        Utils.cellRegister(nibName: "GameCollectionViewCell", collectionView: xboxCollectionView)
 
     }
 
@@ -36,18 +38,46 @@ extension XboxViewController : UICollectionViewDelegate {
 
 extension XboxViewController : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if section == 0{
+            return 1
+        } else if section == 1 {
+            return 1
+        } else {
+            return 10
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCollectionViewCell", for: indexPath)
-        return cell
+        
+        if indexPath.section == 0  {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopularCollectionViewCell", for: indexPath)
+            return cell
+        }else if indexPath.section == 1 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LatestCollectionViewCell", for: indexPath)
+            return cell
+        }else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCollectionViewCell", for: indexPath)
+            return cell
+        }
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = self.view.frame.width / 2 - 16
-        return CGSize(width: width , height: 270)
+        // let width = self.view.frame.width / 2 - 16
+        if indexPath.section == 0 {
+            return CGSize(width: self.view.frame.width , height: 350)
+        }else if indexPath.section == 1 {
+            return CGSize(width: self.view.frame.width , height: 350)
+        }else {
+            return CGSize(width: self.view.frame.width , height: 200)
+        }
+        
     }
     
 }

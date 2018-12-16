@@ -36,6 +36,13 @@
 		CC38677C21C3784A007F5205 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC38677A21C3784A007F5205 /* UserTableViewCell.swift */; };
 		CC38677D21C3784A007F5205 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC38677B21C3784A007F5205 /* UserTableViewCell.xib */; };
 		CC8B88C521C1805400FF4FBF /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8B88C421C1805400FF4FBF /* GameDetailsViewController.swift */; };
+		CCCC706321C4DD8000C987D6 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC706121C4DD8000C987D6 /* PopularCollectionViewCell.swift */; };
+		CCCC706421C4DD8000C987D6 /* PopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCC706221C4DD8000C987D6 /* PopularCollectionViewCell.xib */; };
+		CCCC706721C4E16400C987D6 /* LatestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC706521C4E16400C987D6 /* LatestCollectionViewCell.swift */; };
+		CCCC706821C4E16400C987D6 /* LatestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCC706621C4E16400C987D6 /* LatestCollectionViewCell.xib */; };
+		CCCC706B21C4E6F700C987D6 /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC706921C4E6F700C987D6 /* GameCollectionViewCell.swift */; };
+		CCCC706C21C4E6F700C987D6 /* GameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCC706A21C4E6F700C987D6 /* GameCollectionViewCell.xib */; };
+		CCCC707021C518DD00C987D6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC706F21C518DD00C987D6 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +78,13 @@
 		CC38677A21C3784A007F5205 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		CC38677B21C3784A007F5205 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		CC8B88C421C1805400FF4FBF /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
+		CCCC706121C4DD8000C987D6 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCCC706221C4DD8000C987D6 /* PopularCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCollectionViewCell.xib; sourceTree = "<group>"; };
+		CCCC706521C4E16400C987D6 /* LatestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCCC706621C4E16400C987D6 /* LatestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestCollectionViewCell.xib; sourceTree = "<group>"; };
+		CCCC706921C4E6F700C987D6 /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCCC706A21C4E6F700C987D6 /* GameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCollectionViewCell.xib; sourceTree = "<group>"; };
+		CCCC706F21C518DD00C987D6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F15CD5673D63B6147E0064A9 /* Pods_PADC_IOS_GameSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_GameSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +110,7 @@
 				AA59E4B121C0B1B200A513AC /* XboxViewController.swift */,
 				AA59E4B321C0B23C00A513AC /* NitendoViewController.swift */,
 				CC8B88C421C1805400FF4FBF /* GameDetailsViewController.swift */,
+				CCCC706F21C518DD00C987D6 /* ProfileViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -209,6 +224,12 @@
 				AA36E15221C2455B000D71D4 /* HeaderTableViewCell.xib */,
 				CC38677A21C3784A007F5205 /* UserTableViewCell.swift */,
 				CC38677B21C3784A007F5205 /* UserTableViewCell.xib */,
+				CCCC706121C4DD8000C987D6 /* PopularCollectionViewCell.swift */,
+				CCCC706221C4DD8000C987D6 /* PopularCollectionViewCell.xib */,
+				CCCC706521C4E16400C987D6 /* LatestCollectionViewCell.swift */,
+				CCCC706621C4E16400C987D6 /* LatestCollectionViewCell.xib */,
+				CCCC706921C4E6F700C987D6 /* GameCollectionViewCell.swift */,
+				CCCC706A21C4E6F700C987D6 /* GameCollectionViewCell.xib */,
 			);
 			path = viewcells;
 			sourceTree = "<group>";
@@ -283,10 +304,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCCC706421C4DD8000C987D6 /* PopularCollectionViewCell.xib in Resources */,
+				CCCC706821C4E16400C987D6 /* LatestCollectionViewCell.xib in Resources */,
 				AA32DBD021C0CDAA00B1D8C4 /* FeaturedCollectionViewCell.xib in Resources */,
 				6AF21DA721B3BEF5000C68F6 /* GoogleService-Info.plist in Resources */,
 				99C090DA21B3B1B2000F6CAE /* LaunchScreen.storyboard in Resources */,
 				CC38677D21C3784A007F5205 /* UserTableViewCell.xib in Resources */,
+				CCCC706C21C4E6F700C987D6 /* GameCollectionViewCell.xib in Resources */,
 				99C090D721B3B1B2000F6CAE /* Assets.xcassets in Resources */,
 				AA36E15421C2455B000D71D4 /* HeaderTableViewCell.xib in Resources */,
 				99C090D521B3B1B2000F6CAE /* Main.storyboard in Resources */,
@@ -350,6 +374,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-GameSwitch/Pods-PADC-IOS-GameSwitch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
@@ -367,6 +392,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
@@ -397,11 +423,14 @@
 				AA59E4B221C0B1B200A513AC /* XboxViewController.swift in Sources */,
 				6AF21D9821B3B93D000C68F6 /* BorderTextField.swift in Sources */,
 				6AF21D9A21B3B965000C68F6 /* ShadowTextField.swift in Sources */,
+				CCCC706321C4DD8000C987D6 /* PopularCollectionViewCell.swift in Sources */,
 				99C090D221B3B1B2000F6CAE /* ViewController.swift in Sources */,
+				CCCC706B21C4E6F700C987D6 /* GameCollectionViewCell.swift in Sources */,
 				6AF21DAB21B3C0E6000C68F6 /* HomeViewController.swift in Sources */,
 				6AF21D9221B3B879000C68F6 /* Utils.swift in Sources */,
 				CC8B88C521C1805400FF4FBF /* GameDetailsViewController.swift in Sources */,
 				6AF21DA021B3B9F8000C68F6 /* CustomButton.swift in Sources */,
+				CCCC706721C4E16400C987D6 /* LatestCollectionViewCell.swift in Sources */,
 				99C090D021B3B1B2000F6CAE /* AppDelegate.swift in Sources */,
 				6AF21D9421B3B8DF000C68F6 /* BaseViewController.swift in Sources */,
 				AA59E4B421C0B23C00A513AC /* NitendoViewController.swift in Sources */,
@@ -410,6 +439,7 @@
 				CC38677C21C3784A007F5205 /* UserTableViewCell.swift in Sources */,
 				AA36E15321C2455B000D71D4 /* HeaderTableViewCell.swift in Sources */,
 				6AF21DA221B3BCD0000C68F6 /* NetworkManager.swift in Sources */,
+				CCCC707021C518DD00C987D6 /* ProfileViewController.swift in Sources */,
 				6AF21DA921B3BFC1000C68F6 /* LoginViewController.swift in Sources */,
 				6AF21D9C21B3B997000C68F6 /* CustomTextView.swift in Sources */,
 			);

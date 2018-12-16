@@ -21,34 +21,35 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCa-Nh-IVr">
                         <rect key="frame" x="0.0" y="0.0" width="421" height="269.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="god" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-iw-1Js">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="god" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-iw-1Js">
                                 <rect key="frame" x="16" y="16" width="389" height="237.5"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-l9-gl5">
-                                <rect key="frame" x="24" y="164.5" width="373" height="81"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wh-Mr-KKE">
+                                <rect key="frame" x="16" y="16" width="389" height="237.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God Of War" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88G-TC-vW5">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="36.5"/>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 135" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-r5-VjC">
-                                        <rect key="frame" x="0.0" y="44.5" width="373" height="36.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOD OF WAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1l-GY-35u">
+                                        <rect key="frame" x="91.5" y="101.5" width="206.5" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" red="0.027555303648114204" green="0.019917866215109825" blue="0.045823611319065094" alpha="0.49642385563380281" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Z1l-GY-35u" firstAttribute="centerY" secondItem="3wh-Mr-KKE" secondAttribute="centerY" id="S7r-Iq-pTj"/>
+                                    <constraint firstItem="Z1l-GY-35u" firstAttribute="centerX" secondItem="3wh-Mr-KKE" secondAttribute="centerX" id="VUh-0e-tap"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="jlK-l9-gl5" secondAttribute="trailing" constant="24" id="FzG-nf-Wak"/>
+                            <constraint firstItem="3wh-Mr-KKE" firstAttribute="top" secondItem="wCa-Nh-IVr" secondAttribute="top" constant="16" id="5mi-K9-gtS"/>
+                            <constraint firstAttribute="trailing" secondItem="3wh-Mr-KKE" secondAttribute="trailing" constant="16" id="ESa-6s-MYf"/>
+                            <constraint firstAttribute="bottom" secondItem="3wh-Mr-KKE" secondAttribute="bottom" constant="16" id="KEB-i2-FBA"/>
                             <constraint firstAttribute="bottom" secondItem="Fhe-iw-1Js" secondAttribute="bottom" constant="16" id="RyF-H6-BMM"/>
+                            <constraint firstItem="3wh-Mr-KKE" firstAttribute="leading" secondItem="wCa-Nh-IVr" secondAttribute="leading" constant="16" id="YFL-Ts-ta7"/>
                             <constraint firstItem="Fhe-iw-1Js" firstAttribute="leading" secondItem="wCa-Nh-IVr" secondAttribute="leading" constant="16" id="YGG-lS-nex"/>
-                            <constraint firstItem="jlK-l9-gl5" firstAttribute="leading" secondItem="wCa-Nh-IVr" secondAttribute="leading" constant="24" id="at5-MB-opV"/>
-                            <constraint firstAttribute="bottom" secondItem="jlK-l9-gl5" secondAttribute="bottom" constant="24" id="psf-ck-nbI"/>
                             <constraint firstAttribute="trailing" secondItem="Fhe-iw-1Js" secondAttribute="trailing" constant="16" id="sv5-e2-9qX"/>
+                            <constraint firstAttribute="height" constant="269.5" id="t7h-XC-YFR"/>
                             <constraint firstItem="Fhe-iw-1Js" firstAttribute="top" secondItem="wCa-Nh-IVr" secondAttribute="top" constant="16" id="xZf-l2-MDQ"/>
                         </constraints>
                     </view>
@@ -63,6 +64,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="ivHeader" destination="Fhe-iw-1Js" id="KCc-Qq-fK1"/>
+                <outlet property="viewForeground" destination="3wh-Mr-KKE" id="g93-5f-Nmt"/>
             </connections>
             <point key="canvasLocation" x="-10.4" y="146.62668665667167"/>
         </tableViewCell>
