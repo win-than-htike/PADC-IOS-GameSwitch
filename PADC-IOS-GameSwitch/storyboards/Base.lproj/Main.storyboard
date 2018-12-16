@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="buj-bH-SR1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pzU-Jg-nfY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wd-ny-pzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4680.8000000000002" y="98.50074962518741"/>
+            <point key="canvasLocation" x="1716" y="906"/>
         </scene>
         <!--Profile Setup View Controller-->
         <scene sceneID="99C-5l-gMM">
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZwP-L3-9zu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2625" y="116"/>
+            <point key="canvasLocation" x="1628" y="116"/>
         </scene>
         <!--Xbox-->
         <scene sceneID="VY9-E0-zq6">
@@ -539,7 +539,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="G9a-LJ-IMJ">
             <objects>
-                <tabBarController storyboardIdentifier="HomeViewController" id="buj-bH-SR1" sceneMemberID="viewController">
+                <tabBarController id="buj-bH-SR1" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Se-XC-UQt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -558,7 +558,7 @@
         <!--Navigation Controller-->
         <scene sceneID="aW7-jl-AQV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cAG-rQ-U1B" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="cAG-rQ-U1B" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ryz-jQ-ilL">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -571,7 +571,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkQ-yy-LCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2625" y="800"/>
+            <point key="canvasLocation" x="817" y="906"/>
         </scene>
         <!--PS4-->
         <scene sceneID="kay-NI-LgO">

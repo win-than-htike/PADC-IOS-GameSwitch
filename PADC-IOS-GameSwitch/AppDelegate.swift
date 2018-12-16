@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         validateLoginUser(success: { (vc) in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            print(vc)
             let initialViewController = storyboard.instantiateViewController(withIdentifier: vc)
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
