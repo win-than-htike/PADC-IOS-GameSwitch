@@ -22,15 +22,6 @@ class LoginViewController:BaseViewController,GIDSignInDelegate,GIDSignInUIDelega
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
     }
-    override func viewDidAppear(_ animated: Bool) {
-        guard let user = Auth.auth().currentUser else { return }
-        
-        if user.isEmailVerified{
-            let navigationVC = self.storyboard!.instantiateViewController(withIdentifier: "HomeViewController") as! UINavigationController
-            let vc = navigationVC.viewControllers[0] as! HomeViewController
-            self.present(navigationVC, animated: true, completion: nil)
-        }
-    }
     
     @IBAction func onClickLogin(_ sender: Any) {
         
@@ -179,4 +170,3 @@ class LoginViewController:BaseViewController,GIDSignInDelegate,GIDSignInUIDelega
     }
 
 }
-
