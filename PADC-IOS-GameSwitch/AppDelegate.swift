@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-//        validateLoginUser(success: { (vc) in
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            print(vc)
-//            let initialViewController = storyboard.instantiateViewController(withIdentifier: vc)
-//            self.window?.rootViewController = initialViewController
-//            self.window?.makeKeyAndVisible()
-//        })
+        validateLoginUser(success: { (vc) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            print(vc)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: vc)
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        })
         
         return true
     }

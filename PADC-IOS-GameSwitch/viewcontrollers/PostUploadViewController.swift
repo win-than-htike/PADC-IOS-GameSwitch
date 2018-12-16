@@ -240,5 +240,9 @@ class PostUploadViewController: UIViewController {
         })
         
     }
+    
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }

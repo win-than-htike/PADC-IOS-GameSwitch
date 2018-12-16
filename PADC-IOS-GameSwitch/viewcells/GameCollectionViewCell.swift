@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import Cosmos
 
 class GameCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var ivGame: UIImageView!
+    
+    @IBOutlet weak var tvGameName: UILabel!
+    
+    @IBOutlet weak var cvRating: CosmosView!
+    
+    @IBOutlet weak var tvDeveloper: UILabel!
+    
+    @IBOutlet weak var tvDate: UILabel!
+    
+    @IBOutlet weak var tvReview: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

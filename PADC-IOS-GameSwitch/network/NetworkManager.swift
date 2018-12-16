@@ -35,6 +35,17 @@ class NetworkManager {
         success()
     }
     
+    func getUser(userId : String , success : @escaping (UserVO) -> Void , failure : @escaping () -> Void) {
+        rootRef.child("users").child(userId).observeSingleEvent(of: .value) { (dataSnapshot) in
+            if  let value = dataSnapshot.value as? [String : AnyObject]{
+                let user = UserVO.parseToUserVO(json: value)
+                success(user)
+            }
+            
+            
+        }
+    }
+    
     func loadGames(categoryName:String,nodeName:String,success : @escaping ([GameVO]) -> Void, failure : @escaping () -> Void) {
             rootRef.child(categoryName).child(nodeName).observe(.value) { (dataSnapshot) in
             if let games = dataSnapshot.children.allObjects as? [DataSnapshot] {

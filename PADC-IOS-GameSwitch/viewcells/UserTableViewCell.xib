@@ -94,6 +94,9 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="ivGame" destination="ALf-fB-35m" id="rIH-yj-hsY"/>
+                <outlet property="lblRemark" destination="Guv-YS-Kh5" id="KrL-cZ-rPJ"/>
+                <outlet property="lblTitle" destination="xn6-fc-Alu" id="sIN-ui-Kwk"/>
+                <outlet property="lblUserName" destination="2Xy-tJ-QPi" id="4jO-HT-CB6"/>
             </connections>
             <point key="canvasLocation" x="140" y="269.41529235382313"/>
         </tableViewCell>

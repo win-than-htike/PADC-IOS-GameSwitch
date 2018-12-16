@@ -83,6 +83,38 @@
             endingLineNumber = "156"
             landmarkName = "imageUpload(data:success:failure:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PADC_IOS_GameSwitch.NetworkManager.imageUpload(data: Swift.Optional&lt;Foundation.Data&gt;, success: (Swift.String) -&gt; (), failure: () -&gt; ()) -&gt; ()"
+                  moduleName = "PADC-IOS-GameSwitch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aceplus101/IOS%20Development/PADC/Testing/PADC-IOS-GameSwitch/PADC-IOS-GameSwitch/network/NetworkManager.swift"
+                  timestampString = "566652775.340945"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRStorageMetadata&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PADC_IOS_GameSwitch.NetworkManager.imageUpload(data: Swift.Optional&lt;Foundation.Data&gt;, success: (Swift.String) -&gt; (), failure: () -&gt; ()) -&gt; ()"
+                  moduleName = "PADC-IOS-GameSwitch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aceplus101/IOS%20Development/PADC/Testing/PADC-IOS-GameSwitch/PADC-IOS-GameSwitch/network/NetworkManager.swift"
+                  timestampString = "566652775.343312"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

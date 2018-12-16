@@ -12,6 +12,8 @@ class PopularCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var popularCollectionView: UICollectionView!
     
+    var popularGames : [GameVO] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -28,9 +30,13 @@ extension PopularCollectionViewCell : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        
-        let nav  = self.window?.rootViewController!.storyboard?.instantiateViewController(withIdentifier: "GameDetailsViewController")
+        let nav  = self.window?.rootViewController!.storyboard?.instantiateViewController(withIdentifier: "GameDetailsViewController") as! UINavigationController
         
-        self.window?.rootViewController!.present( nav! , animated: true , completion: nil )
+        let vc  = nav.viewControllers[0] as! GameDetailsViewController
+        
+        vc.game = popularGames[indexPath.row]
+        
+        self.window?.rootViewController!.present( nav , animated: true , completion: nil )
         
     }
     
@@ -38,12 +44,17 @@ extension PopularCollectionViewCell : UICollectionViewDelegate {
 
 extension PopularCollectionViewCell : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return popularGames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCollectionViewCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCollectionViewCell", for: indexPath) as! FeaturedCollectionViewCell
+        
+        let game = popularGames[indexPath.row]
+        
+        cell.ivGame.sd_setImage(with: URL(string: game.images[0].image_url) , placeholderImage: UIImage(named: "game"))
+        
         return cell
         
     }
