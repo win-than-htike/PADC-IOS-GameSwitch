@@ -130,9 +130,9 @@ class NetworkManager {
         
     }
     
-    func postGameSwitch(fromGameId:String,toGameId:String,postVO:PostVO, success : @escaping () -> Void, failure : @escaping () -> Void) {
-        rootRef.child(fromGameId).child("from_switch_posts").child(postVO.user.id).setValue(PostVO.parseToDictionary(post: postVO))
-        rootRef.child(toGameId).child("to_switch_posts").child(postVO.user.id).setValue(PostVO.parseToDictionary(post: postVO))
+    func postGameSwitch(categoryName:String,trendName:String,fromGameId:String,toGameId:String,postVO:PostVO, success : @escaping () -> Void, failure : @escaping () -> Void) {
+    rootRef.child(categoryName).child(trendName).child(fromGameId).child("from_switch_posts").child(postVO.id).setValue(PostVO.parseToDictionary(post: postVO))
+    rootRef.child(categoryName).child(trendName).child(toGameId).child("to_switch_posts").child(postVO.id).setValue(PostVO.parseToDictionary(post: postVO))
         success()
     }
     

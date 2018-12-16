@@ -12,7 +12,7 @@ class GameVO{
     var developer = "", id: String = ""
     var images: [Image] = []
     var name: String = ""
-    var price: Int = 0
+    var price: Double = 0.0
     var rating: Double = 0.0
     var released_date = "",
     review: String = "",
@@ -39,7 +39,7 @@ class GameVO{
         let game = GameVO()
         game.id = json["id"] as! String
         game.name = json["name"] as! String
-        game.price = json["price"] as! Int
+        game.price = json["price"] as! Double
         game.rating = json["rating"] as! Double
         game.released_date = json["released_date"] as! String
         game.review = json["review"] as! String
@@ -53,4 +53,8 @@ class GameVO{
 
 class Image {
     var image_url: String = ""
+}
+class Item {
+    let title:String = ""
+    let value:String = ""
 }

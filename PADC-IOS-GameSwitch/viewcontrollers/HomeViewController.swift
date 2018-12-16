@@ -22,7 +22,7 @@ class HomeViewController: BaseViewController {
         }) {
             print("loading failed")
         }
-        DataModel.shared.getGames(categoryName: "nitendo", nodeName: "popular_games",success: { (games) in
+        DataModel.shared.getGames(categoryName: "nitendo", nodeName: "normal_games",success: { (games) in
             print(games)
         }) {
             print("loading failed")

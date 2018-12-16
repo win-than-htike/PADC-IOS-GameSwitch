@@ -30,6 +30,13 @@ class DataModel {
         }
     }
     
+    func postGameSwitch(categoryName:String,trendName:String,fromGameId:String,toGameId:String,postVO:PostVO, success : @escaping () -> Void, failure : @escaping () -> Void){
+        NetworkManager.shared.postGameSwitch(categoryName:categoryName,trendName:trendName,fromGameId: fromGameId, toGameId: toGameId, postVO: postVO, success: {
+            success()
+        }) {
+            failure()
+        }
+    }
     func getGames(categoryName:String,nodeName:String,success : @escaping ([GameVO]) -> Void, failure : @escaping () -> Void) {
         NetworkManager.shared.loadGames(categoryName: categoryName,nodeName: nodeName,success: { (data) in
             success(data)

@@ -20,7 +20,7 @@ class PostVO{
             "fromGameName" : post.fromGameName,
             "toGameName" : post.toGameName,
             "remark" : post.remark,
-            "user": post.user
+            "user": UserVO.parseToDictionary(user: post.user)
             ] as [String : Any]
         return value
     }
