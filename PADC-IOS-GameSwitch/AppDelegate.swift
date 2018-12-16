@@ -8,16 +8,47 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
+        validateLoginUser(success: { (vc) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: vc)
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        })
+        
         return true
+    }
+    
+    func validateLoginUser(success: @escaping (String) -> Void){
+        let rootRef = Database.database().reference()
+        var vc = "LoginViewController"
+        
+        if let user = Auth.auth().currentUser{
+            if user.isEmailVerified{
+                vc = "ProfileSetupViewController"
+            }//need to add logic ?
+            
+            rootRef.child("users").observe(.value) { (dataSnapshot) in
+                if dataSnapshot.hasChild(user.uid){
+                    vc = "HomeViewController"
+                    success(vc)
+                }else{
+                    vc = "ProfileSetupViewController"
+                    success(vc)
+                }
+            }
+        }else{
+            success(vc)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
